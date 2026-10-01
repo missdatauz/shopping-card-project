@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+  <body class="bg-gray-100">
+    <main id="shopping-card-container" class="min-h-screen py-4 px-4 sm:px-6 lg:px-8 font-sans">
+      <div class="flex flex-col gap-y-20 justify-center p-9 lg:flex-row flex-wrap">
+        <section id="products-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto w-full px-4">
+      
+          <article class="card border-slate-200 rounded-xl p-4 w-full grid grid-rows-[auto_auto_auto_1fr] gap-y-4 text-center bg-white shadow-md">
+        <h2 class="text-base font-semibold text-slate-800 lg:text-lg">Harry Potter and the Philosopher's Stone</h2>
+        <p class="text-slate-500">Author (Muallif): J.K. Rowling</p>
+        <p class="text-slate-500">Genre (Janr): Fantasy / Adventure</p>
+        <div class="text-gray-700"><button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">-</button> <span class="quantity">1</span> <button type="button" class="bg-green-600 px-1.5 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">+</button></div>
+         <p class="price text-indigo-600">$90</p>
+         <button type="button" class="remove-button bg-red-500 text-gray-700 rounded-md shadow-sm  hover:bg-red-600">Remove</button>
+      </article>
+         
+      <article class="card border-slate-200 rounded-xl p-4 w-full grid grid-rows-[auto_auto_auto_1fr] gap-y-4 text-center bg-white shadow-md">
+        <h2 class="text-base font-semibold text-slate-800 lg:text-lg">The Hobbit</h2>
+        <p class="text-slate-500">Author (Muallif): J.R.R. Tolkien</p>
+        <p class="text-slate-500">Genre (Janr): High Fantasy / Adventure</p>
+        <div class="text-gray-700"><button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">-</button> <span class="quantity">2</span> <button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">+</button></div>
+         <p class="price text-indigo-600">$105</p>
+         <button type="button" class="remove-button bg-red-500 text-gray-700 rounded-md shadow-sm  hover:bg-red-600">Remove</button>
+      </article>
+
+      <article class="card border-slate-200 rounded-xl p-4 w-full grid grid-rows-[auto_auto_auto_1fr] gap-y-4 text-center bg-white shadow-md">
+      <h2 class="text-base font-semibold text-slate-800 lg:text-lg">The Adventures of Sherlock Holmes</h2>
+        <p class="text-slate-500">Author (Muallif): Arthur Conan Doyle</p>
+        <p class="text-slate-500">Genre (Janr): Detective / Mystery</p>
+        <div class="text-gray-700"><button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">-</button> <span class="quantity">1</span> <button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">+</button></div>
+         <p class="price text-indigo-600">$80</p>
+         <button type="button" class="remove-button bg-red-500 text-gray-700 rounded-md shadow-sm  hover:bg-red-600">Remove</button>
+      </article>
+
+      <article class="card border-slate-200 rounded-xl p-4 w-full grid grid-rows-[auto_auto_auto_1fr] gap-y-4 text-center bg-white shadow-md">
+         <h2 class="text-base font-semibold text-slate-800 lg:text-lg">Murder on the Orient Express</h2>
+        <p class="text-slate-500">Author (Muallif): Agatha Christie</p>
+        <p class="text-slate-500">Genre (Janr): Detective / Murder Mystery</p>
+        <div class="text-gray-700"><button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">-</button> <span class="quantity">3</span> <button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">+</button></div>
+         <p class="price text-indigo-600">$70</p>
+         <button type="button" class="remove-button bg-red-500 text-gray-700 rounded-md shadow-sm  hover:bg-red-600">Remove</button>
+      </article>
+
+      <article class="card  border-slate-200 rounded-xl p-4 w-full grid grid-rows-[auto_auto_auto_1fr] gap-y-4 text-center bg-white shadow-md">
+        <h2 class="text-base font-semibold text-slate-800 lg:text-lg">The Da Vinci Code</h2>
+        <p class="text-slate-500">Author (Muallif): Dan Brown</p>
+        <p class="text-slate-500">Genre (Janr): Mystery / Thriller</p>
+        <div class="text-gray-700"><button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">-</button> <span class="quantity">2</span> <button type="button" class="bg-green-600 px-2 rounded-md shadow-sm hover:bg-green-700 hover:text-gray-300">+</button></div>
+         <p class="price text-indigo-600">$78</p>
+         <button type="button" class="remove-button bg-red-500 text-gray-700 rounded-md shadow-sm  hover:bg-red-600">Remove</button>
+      </article>
+    </section>
+      <article class="order-summary-container border-slate-200 rounded-xl p-6 gap-y-4 text-center bg-white shadow-md space-y-6 text-gray-800 ">
+   <h2 class="font-bold">Order Summary</h2>
+   <p id="total" class="font-medium">Subtotal: <span class="price text-indigo-600 font-normal">$55.35</span></p>
+   <p class="font-medium">Shipping: <span class="font-normal">Calculated in checkout</span></p>
+   <p id="total-amount" class="font-medium">Total: <span class="text-indigo-600 font-normal">$500</span></p>
+   <a href="#" class="bg-blue-500 hover:bg-blue-600 rounded-md px-2 py-1 shadow-sm text-gray-700">Checkout</a>
+      </article>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
